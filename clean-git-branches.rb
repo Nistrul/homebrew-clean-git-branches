@@ -9,12 +9,12 @@
 class CleanGitBranches < Formula
     desc "A command-line tool to help maintain a tidy Git branches."
     homepage "https://github.com/Nistrul/clean-git-branches"
-    url "https://github.com/Nistrul/clean_git_branches/archive/refs/tags/v0.1.1.tar.gz"
-    sha256 "449cc91bb457382a65d09778b2a50a4e92239d0a8efd1128c6d57f72f9814782"
+    url "https://github.com/Nistrul/clean_git_branches/archive/refs/tags/v0.2.0.tar.gz"
+    sha256 "03f39478c68f79d7616c368f28ba0c8e82248c056a0b893fddb4b52595873a31"
     license "MIT"
   
     def install
-      bin.install "clean_git_branches.sh"
+      bin.install "clean_git_branches.sh" => "clean_git_branches"
     end
   
     test do
